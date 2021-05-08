@@ -20,6 +20,6 @@ public class Task1 {
             }
 
         System.out.println("Длинна массива "+ l);
-
+        System.out.println();
     }
 }
