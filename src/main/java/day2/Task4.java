@@ -6,7 +6,7 @@ public class Task4 {
     public static void main(String[] args) {
     Scanner w = new Scanner(System.in);
         System.out.println("Enter your number");
-    double x = w.nextInt();
+    double x = w.nextDouble();
     if (x >= 5){
         double y = (x*x)-10/x+7;
         System.out.println(y);

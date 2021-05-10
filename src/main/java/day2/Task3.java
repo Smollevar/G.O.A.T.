@@ -11,9 +11,8 @@ public class Task3 {
         int b = scr.nextInt();
         int l = a+1;
         while (l<b){
-            if (l % 5 == 0 && l % 10 != 0) {
+            if (l % 5 == 0 && l % 10 != 0)
                 System.out.println(l);
-            }
             l++;
         }
     }
