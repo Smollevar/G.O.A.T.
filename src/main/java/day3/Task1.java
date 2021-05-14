@@ -6,6 +6,7 @@ public class Task1 {
     public static void main(String[] args) {
         Scanner NameOfTown = new Scanner(System.in);
         while (true) {
+            System.out.println("Enter name of town");
             String NOT = NameOfTown.nextLine();
             if (NOT.equals("Stop"))
                 break;

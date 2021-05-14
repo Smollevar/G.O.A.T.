@@ -10,8 +10,9 @@ public class Task2 {
             double a = scanner.nextDouble();
             System.out.println("Введите делитель");
             double b = scanner.nextDouble();
-            if (b == 0)
-                break;
+            if (b == 0){
+                System.out.println("Деление на ноль");
+                break;}
             System.out.println(a / b);
 
         }

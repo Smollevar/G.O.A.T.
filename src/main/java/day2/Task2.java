@@ -9,12 +9,13 @@ public class Task2 {
         int a = g.nextInt();
         System.out.println("Введите второе число");
         int b = g.nextInt();
+        System.out.println();
         if (a>=b)
             System.out.println("Некорректный ввод");
         int i = a++;
         for(int j = i;i<b;i++){
             if (i%5==0&&i%10!=0){
-                System.out.println(i);
+                System.out.print(i+" ");
             }
         }
     }
