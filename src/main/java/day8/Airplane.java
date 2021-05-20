@@ -44,11 +44,11 @@ class Airplane {
     }
 
     public void fillUp(int n) {
-        System.out.println("Заправка на: "+n+" Литра");
-        this.fuel = fuel+ n;
+        System.out.println("Заправка на: " + n + " Литра");
+        this.fuel = fuel + n;
     }
 
-    public String toString(){
-        return producer+" "+year+" "+length+" "+weight;
+    public String toString() {
+        return producer + " " + year + " " + length + " " + weight;
     }
 }

@@ -9,10 +9,10 @@ public class Task3 {
         int a = scr.nextInt();
         System.out.println("Введите второе число");
         int b = scr.nextInt();
-        int l = a+1;
-        while (l<b){
+        int l = a + 1;
+        while (l < b) {
             if (l % 5 == 0 && l % 10 != 0)
-                System.out.print(l+" ");
+                System.out.print(l + " ");
             l++;
         }
     }

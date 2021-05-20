@@ -16,10 +16,15 @@ public class Task3 {
             int sum = 0;
             for (int n = 0; n < twoArray[i].length; n++) {
                 System.out.print(twoArray[i][n] + " ");
-                sum += twoArray[i][n];}
+                sum += twoArray[i][n];
+            }
             System.out.println(" // Сумма элементов массива: " + sum);
             if (maxSum <= sum) {
                 maxSum = sum;
-                maxIndex = i;}}
+                maxIndex = i;
+            }
+        }
         System.out.print("Сумма элементов большего массива- " + maxSum);
-        System.out.println(" Индекс большей строки: " + maxIndex);}}
+        System.out.println(" Индекс большей строки: " + maxIndex);
+    }
+}

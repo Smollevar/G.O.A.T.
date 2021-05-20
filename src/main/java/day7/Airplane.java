@@ -23,7 +23,9 @@ class Airplane {
         this.year = x;
     }
 
-    public int getLength() { return length;  }
+    public int getLength() {
+        return length;
+    }
 
     public void setLength(int x) {
         this.length = x;
@@ -54,9 +56,9 @@ class Airplane {
     public static void compareAirplane(Airplane plane_1, Airplane plane_2) {
         if (plane_1.getLength() > plane_2.getLength()) {
             System.out.println("Первый самолет длиннее");
-        } else if (plane_1.getLength() < plane_2.getLength()){
+        } else if (plane_1.getLength() < plane_2.getLength()) {
             System.out.println("Второй самолет длиннее");
-        }else{
+        } else {
             System.out.println("Длинна самолетов одинакова");
         }
     }
