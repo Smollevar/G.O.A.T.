@@ -17,9 +17,9 @@ public class Task1 {
         String conc = " ";
         long s = System.currentTimeMillis();
         for (int i = 0; i < 20001; i++) {
-            String o = i + conc;
-            System.out.print(o);
+            conc += i + " ";
         }
+        System.out.print(conc);
         System.out.println();
         System.out.println((double) (System.currentTimeMillis() - s));
     }
