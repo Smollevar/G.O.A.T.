@@ -19,6 +19,7 @@ public class Task1 {
         p2.doWork();
         p2.bonus();
         c2.bonus();
+        c2.bonus();
         System.out.println(wr2.toString());
         System.out.println(p2.toString());
         System.out.println(c2.toString());
