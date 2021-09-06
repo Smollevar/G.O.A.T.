@@ -1,25 +1,26 @@
-package day16;
+package TestSixTeenDay;
 
-import java.io.*;
-import java.util.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Random;
+import java.util.Scanner;
 
 public class Task2 {
     public static void main(String[] args) {
         Random rnd = new Random();
         String separator = File.separator;
-        String path1 = separator + "CodeMaster" + separator + "JavaMarathon2021" + separator + "JavaMarathon2021" + separator + "src" + separator + "main" + separator + "resources" + separator + "file1.txt";
+        String path = separator + "CodeMaster" + separator + "JavaMarathon2021" + separator + "JavaMarathon2021" + separator + "src" + separator + "main" + separator + "resources" + separator + "file1.txt";
         String path2 = separator + "CodeMaster" + separator + "JavaMarathon2021" + separator + "JavaMarathon2021" + separator + "src" + separator + "main" + separator + "resources" + separator + "file2.txt";
 
-        File file = new File(path1);
+        File file = new File(path);
         File file2 = new File(path2);
-        try (PrintWriter pw = new PrintWriter(file)) {
-            for (int i = 0; i < 1000; i++) {
-                pw.print(rnd.nextInt(101) + " ");
-            }
-        } catch (FileNotFoundException e) {
-            System.out.println("Файл не найден");
-        }
+
         try (PrintWriter pw2 = new PrintWriter(file2)) {
+            PrintWriter pw = new PrintWriter(file);
+            for (int i = 0; i < 1000; i++) {
+                pw.print((rnd.nextInt(101) + " "));
+            }
             Scanner scanner = new Scanner(file);
             String line = scanner.nextLine();
             String[] strline = line.split(" ");
@@ -58,3 +59,4 @@ public class Task2 {
         }
     }
 }
+
