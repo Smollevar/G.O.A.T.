@@ -9,10 +9,9 @@ public class Task2 {
         if (i <= 1) {
             return 0;
         }
-        int sum = 0;
+        System.out.println(i);
         if (i % 10 == 7) {
-            sum++;
-        }
-        return count7(i / 10) + sum;
+            return count7(i / 10) + 1;
+        } else return count7(i / 10);
     }
 }

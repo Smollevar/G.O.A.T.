@@ -55,7 +55,7 @@ public class Task3 {
             x2 = scanner.nextInt();
             System.out.println("Enter y2");
             y2 = scanner.nextInt();
-            if (x1 >= x2 && y1 >= y2) {
+            if (x1 >= x2 || y1 <= y2) {
                 System.out.println("Wrong parameters");
             } else
                 break;

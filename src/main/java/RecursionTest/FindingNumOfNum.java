@@ -3,6 +3,7 @@ package RecursionTest;
 public class FindingNumOfNum {
     public static void main(String[] args) {
         System.out.println(seven(7217));
+
     }
 /*
 7217 % 10 = 7 == 7? yes sum 0 + 1 7217/10  ->;
@@ -15,11 +16,11 @@ public class FindingNumOfNum {
         if (i <= 1) {
             return 0;
         }
-        int sum = 0;
         System.out.println(i);
         if (i % 10 == 7) {
-            sum++;
-        }
-        return seven(i / 10) + sum;
+            return seven(i / 10) + 1;
+        } else return seven(i / 10);
     }
 }
+
+
