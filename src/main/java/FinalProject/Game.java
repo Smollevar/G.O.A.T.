@@ -1,17 +1,31 @@
 package FinalProject;
 
+import java.io.IOException;
 import java.util.*;
 
 /**
  * @author Dmitry Kravtsov
  */
 public class Game {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, InterruptedException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to Sea battle game");
         System.out.println("Select Player1 or Player2");
-        Player p1 = new Player(scanner.nextLine());
+        boolean insertName = true;
+        Player p1 = new Player();
         String secondName = null;
+        while (insertName) {
+            String str = scanner.nextLine();
+            if (str.equals("Player1")) {
+                p1.setNamePalyer(str);
+                insertName = false;
+            } else if (str.equals("Player2")) {
+                p1.setNamePalyer(str);
+                insertName = false;
+            } else {
+                System.out.println("Wrong name of player, please type *Player1* or *Player2*.");
+            }
+        }
         if (p1.getNamePalyer().equals("Player1")) {
             secondName = "Player2";
         } else if (p1.getNamePalyer().equals("Player2")) {
