@@ -16,6 +16,15 @@ public class Task1 {
         for (int i = 0; i < 10; i++) {
             c2.doWork();
         }
+        Warehouse wr3 = new Warehouse();
+        Picker p3 = new Picker(wr3);
+        Picker p4 = new Picker(wr3);
+        for (int i = 0; i < 10000; i++)
+            p3.doWork();
+        p3.bonus();
+        System.out.println("Это третий сборщик " + p3.getIsPayed() + p3.toString());
+        p4.bonus();
+        System.out.println("Это четвертый сборщик " + p4.getIsPayed() + p4.toString());
         p2.doWork();
         p2.bonus();
         c2.bonus();

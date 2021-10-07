@@ -7,7 +7,7 @@ import java.util.*;
  * @author Dmitry Kravtsov
  */
 public class Game {
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args)  {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to Sea battle game");
         System.out.println("Select Player1 or Player2");

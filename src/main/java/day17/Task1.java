@@ -14,6 +14,6 @@ public class Task1 {
         pieces.add(ChessPiece.ROOK_BLACK);
         pieces.add(ChessPiece.ROOK_BLACK);
         for (ChessPiece piece : pieces)
-            System.out.print(piece.getColorPiece()+" ");
+            System.out.print(piece.getPiece()+" ");
     }
 }

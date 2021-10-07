@@ -7,15 +7,15 @@ public enum ChessPiece {
     KING_BLACK(100, "♚"), QUEEN_BLACK(9, "♛"), ROOK_BLACK(5, "♜"),
     BISHOP_BLACK(3.5, "♝"), KNIGHT_BLACK(3, "♞"), PAWN_BLACK(1, "♟"),
     EMPTY(-1,"_");
-    private double piecePrice;
-    private String colorPiece;
+    private double PiecePrice;
+    private String Piece;
 
-    ChessPiece(double piecePrice, String colorPiece) {
-        this.piecePrice = piecePrice;
-        this.colorPiece = colorPiece;
+    ChessPiece(double PiecePrice, String Piece) {
+        this.PiecePrice = PiecePrice;
+        this.Piece = Piece;
     }
 
-    public String getColorPiece() {
-        return colorPiece;
+    public String getPiece() {
+        return Piece;
     }
 }
